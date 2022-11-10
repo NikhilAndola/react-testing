@@ -23,6 +23,8 @@ const Timer = () => {
     } else {
       clearInterval(timeRef.current);
     }
+    return () => 
+      clearInterval(timeRef.current);
   }, [ss]);
 
   useEffect(() => {
